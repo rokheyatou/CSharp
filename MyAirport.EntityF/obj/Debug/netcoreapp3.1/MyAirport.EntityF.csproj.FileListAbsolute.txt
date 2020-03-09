@@ -1,0 +1,10 @@
+C:\Users\33658\source\repos\MyAirport\MyAirport.EntityF\bin\Debug\netcoreapp3.1\MyAirport.EntityF.deps.json
+C:\Users\33658\source\repos\MyAirport\MyAirport.EntityF\bin\Debug\netcoreapp3.1\MyAirport.EntityF.runtimeconfig.json
+C:\Users\33658\source\repos\MyAirport\MyAirport.EntityF\bin\Debug\netcoreapp3.1\MyAirport.EntityF.runtimeconfig.dev.json
+C:\Users\33658\source\repos\MyAirport\MyAirport.EntityF\bin\Debug\netcoreapp3.1\MyAirport.EntityF.dll
+C:\Users\33658\source\repos\MyAirport\MyAirport.EntityF\bin\Debug\netcoreapp3.1\MyAirport.EntityF.pdb
+C:\Users\33658\source\repos\MyAirport\MyAirport.EntityF\obj\Debug\netcoreapp3.1\MyAirport.EntityF.csprojAssemblyReference.cache
+C:\Users\33658\source\repos\MyAirport\MyAirport.EntityF\obj\Debug\netcoreapp3.1\MyAirport.EntityF.AssemblyInfoInputs.cache
+C:\Users\33658\source\repos\MyAirport\MyAirport.EntityF\obj\Debug\netcoreapp3.1\MyAirport.EntityF.AssemblyInfo.cs
+C:\Users\33658\source\repos\MyAirport\MyAirport.EntityF\obj\Debug\netcoreapp3.1\MyAirport.EntityF.dll
+C:\Users\33658\source\repos\MyAirport\MyAirport.EntityF\obj\Debug\netcoreapp3.1\MyAirport.EntityF.pdb
