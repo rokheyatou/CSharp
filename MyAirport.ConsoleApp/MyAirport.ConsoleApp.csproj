@@ -10,10 +10,15 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.2">
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\MyAirport.EF\MyAirport.EF.csproj" />
     <ProjectReference Include="..\MyAirport.EntityF\MyAirport.EntityF.csproj" />
+    <ProjectReference Include="..\MyAirportParis.EF\MyAirportParis.EF.csproj" />
   </ItemGroup>
 
 </Project>

@@ -10,9 +10,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyAirport.ConsoleApp", "MyA
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyAirport.EF", "MyAirport.EF\MyAirport.EF.csproj", "{92C43496-B7AB-43C2-9E87-4A2B1E8C3CB9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyAirportParis.EF", "MyAirportParis.EF\MyAirportParis.EF.csproj", "{A2F58ABF-F260-4E96-8806-6523E3898F2D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyAirportParis.EF", "MyAirportParis.EF\MyAirportParis.EF.csproj", "{A2F58ABF-F260-4E96-8806-6523E3898F2D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyAirport.EntityF", "MyAirport.EntityF\MyAirport.EntityF.csproj", "{01F0158B-192B-4D63-8438-01056745479D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyAirport.EntityF", "MyAirport.EntityF\MyAirport.EntityF.csproj", "{01F0158B-192B-4D63-8438-01056745479D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

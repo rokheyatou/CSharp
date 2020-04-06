@@ -1,16 +1,31 @@
 ﻿using System;
+using System.Configuration;
 using System.Linq;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
 using NR.MyAirport.EF;
 
-namespace NR.MyAirport.ConsoleApp
+namespace NR.MyAirport.EntityF
+
 {
     class Program
     {
+        public static ILoggerFactory MyAirportLoggerFactory = LoggerFactory.Create(builder => builder.AddConsole());
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-            System.Console.WriteLine("MyAirport project bonjour!!");
-            using (var db = new MyAirportContext())
+            // On initialise ici le DbContextBuilder qui sera fournit au constructeur de MyAirport
+            var optionsBuilder = new DbContextOptionsBuilder<MyAirportContext>();
+            optionsBuilder.UseSqlServer(ConfigurationManager.ConnectionStrings["MyAirportDb"].ConnectionString);
+            optionsBuilder.UseLoggerFactory(MyAirportLoggerFactory);
+
+            ILogger logger = MyAirportLoggerFactory.CreateLogger<Program>();
+            logger.LogInformation("Démarrage du programme");
+            Console.WriteLine("MyAirport project bonjour!!");
+            using (var db = new MyAirportContext(optionsBuilder.Options))
+
+                Console.WriteLine("MyAirport project bonjour!!");
+
+            using (var db = new MyAirportContext(optionsBuilder.Options))
             {
                 // Create
                 Console.WriteLine("Création du vol LH1232");
@@ -64,7 +79,15 @@ namespace NR.MyAirport.ConsoleApp
 
                 // Update
                 Console.WriteLine($"Le bagage {b1.BagageId} est modifié pour être rattaché au vol {v1.VolId} => {v1.Cie}{v1.Lig}");
+                b1.VolId = v1.VolId;
+                db.SaveChanges();
+                Console.ReadLine();
 
+                // Delete vol et bagages du vol
+                Console.WriteLine($"Suppression du vol {v1.VolId} => {v1.Cie}{v1.Lig}");
+                db.Remove(v1);
+                db.SaveChanges();
+                Console.ReadLine();
             }
         }
     }
