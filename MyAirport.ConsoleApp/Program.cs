@@ -3,14 +3,14 @@ using System.Configuration;
 using System.Linq;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
-using NR.MyAirport.EF;
+using NR.MyAirport.EntityF;
 
 namespace NR.MyAirport.EntityF
 
 {
     class Program
     {
-        public static ILoggerFactory MyAirportLoggerFactory = LoggerFactory.Create(builder => builder.AddConsole());
+        public static ILoggerFactory MyAirportLoggerFactory = LoggerFactory.Create(builder => { builder.AddConsole(); });
         static void Main(string[] args)
         {
             // On initialise ici le DbContextBuilder qui sera fournit au constructeur de MyAirport
@@ -24,6 +24,7 @@ namespace NR.MyAirport.EntityF
             using (var db = new MyAirportContext(optionsBuilder.Options))
 
                 Console.WriteLine("MyAirport project bonjour!!");
+
 
             using (var db = new MyAirportContext(optionsBuilder.Options))
             {
